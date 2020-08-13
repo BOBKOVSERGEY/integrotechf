@@ -1,0 +1,42 @@
+{
+  "name": "integrotechf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BOBKOVSERGEY/integrotechf.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BOBKOVSERGEY/integrotechf/issues"
+  },
+  "homepage": "https://github.com/BOBKOVSERGEY/integrotechf#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "browser-sync": "^2.26.7",
+    "csso": "^3.5.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-csso": "^3.0.1",
+    "gulp-imagemin": "^6.0.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp.spritesmith": "^6.10.1",
+    "panini": "^1.6.3",
+    "pump": "^3.0.0",
+    "yarn": "^1.22.4"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}

@@ -1,0 +1,204 @@
+
+
+<a href="#" class="scroll-top" id="scroll-top">
+  <i class="arrow-top fas fa-chevron-up"></i>
+  <i class="arrow-bottom fas fa-chevron-up"></i>
+</a>
+<!--====================  End of scroll top  ====================-->
+<!--====================  mobile menu overlay ====================-->
+<div class="mobile-menu-overlay" id="mobile-menu-overlay">
+  <div class="mobile-menu-overlay__inner">
+    <div class="mobile-menu-overlay__header">
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-8">
+            <!-- logo -->
+            <div class="logo">
+              <a href="/">
+                <img src="dist/images/logo.svg" class="img-fluid" width="120px" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-4">
+            <!-- mobile menu content -->
+            <div class="mobile-menu-content text-right">
+              <span class="mobile-navigation-close-icon" id="mobile-menu-close-trigger"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu-overlay__body">
+      <nav class="offcanvas-navigation">
+        <ul>
+          <li class="has-children">
+            <a href="about.html">О компании</a>
+          </li>
+          <li class="has-children">
+            <a href="catalog.html">Продукция</a>
+            <!--<ul class="sub-menu">
+              <li class="has-children">
+                <a href="#">Category Group 01</a>
+                <ul class="sub-menu">
+                  <li><a href="#"><span>Product item 1</span></a></li>
+                  <li><a href="#"><span>Product item 2</span></a></li>
+                  <li><a href="#"><span>Product item 3</span></a></li>
+                  <li><a href="#"><span>Product item 4</span></a></li>
+                  <li><a href="#"><span>Product item 5</span></a></li>
+                  <li><a href="#"><span>Product item 6</span></a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Category Group 02</a>
+                <ul class="sub-menu">
+                  <li><a href="#"><span>Product item 1</span></a></li>
+                  <li><a href="#"><span>Product item 2</span></a></li>
+                  <li><a href="#"><span>Product item 3</span></a></li>
+                  <li><a href="#"><span>Product item 4</span></a></li>
+                  <li><a href="#"><span>Product item 5</span></a></li>
+                  <li><a href="#"><span>Product item 6</span></a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Category Group 03</a>
+                <ul class="sub-menu">
+                  <li><a href="#"><span>Product item 1</span></a></li>
+                  <li><a href="#"><span>Product item 2</span></a></li>
+                  <li><a href="#"><span>Product item 3</span></a></li>
+                  <li><a href="#"><span>Product item 4</span></a></li>
+                  <li><a href="#"><span>Product item 5</span></a></li>
+                  <li><a href="#"><span>Product item 6</span></a></li>
+                </ul>
+              </li>
+              <li class="has-children">
+                <a href="#">Category Group 04</a>
+                <ul class="sub-menu">
+                  <li><a href="#"><span>Product item 1</span></a></li>
+                  <li><a href="#"><span>Product item 2</span></a></li>
+                  <li><a href="#"><span>Product item 3</span></a></li>
+                  <li><a href="#"><span>Product item 4</span></a></li>
+                  <li><a href="#"><span>Product item 5</span></a></li>
+                  <li><a href="#"><span>Product item 6</span></a></li>
+                </ul>
+              </li>
+
+            </ul>-->
+          </li>
+          <li class="has-children">
+            <a href="services.html">Услуги</a>
+          </li>
+          <!--<li class="has-children">
+            <a href="javascript:void(0)">Услуги</a>
+            <ul class="sub-menu">
+              <li><a href="case-studies.html"><span>Case Studies 01</span></a></li>
+              <li><a href="case-studies-02.html"><span>Case Studies 02</span></a></li>
+              <li><a href="single-smart-vision.html"><span>Single Layout</span></a></li>
+            </ul>
+          </li>-->
+          <li class="has-children">
+            <a href="#">Пресс-центер</a>
+            <ul class="sub-menu">
+              <li><a href="news.html"><span>Новости компании</span></a></li>
+              <li><a href="our-works.html"><span>Наши работы</span></a></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <a href="contacts.html">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
+<!--====================  End of mobile menu overlay  ====================-->
+<!--====================  modal  ====================-->
+<div class="modal modal-my fade" id="request" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <div class="media flex-fill align-items-center">
+          <div class="modal-my__icon">
+            <i class="far fa-paper-plane"></i>
+          </div>
+          <div class="media-body align-self-center">
+            <h5 class="modal-title">Связаться с нами</h5>
+            <p class="small">Чтобы сделать запрос на дополнительную информацию, свяжитесь с нами</p>
+          </div>
+        </div>
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form class="form-modal"  method="post" enctype="multipart/form-data">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" name="name" placeholder="Ваше имя, компания">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="email" class="form-control form-control-lg" name="email" placeholder="Ваш email">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" name="phone" placeholder="Ваш телефон">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <input type="text" class="form-control form-control-lg" name="subject" placeholder="Тема сообщения">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="form-group">
+                <textarea class="form-control form-control-lg" name="comment" rows="4" placeholder="Ваш комментарий"></textarea>
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <div class="form-group">
+                <input type="file" id="file-modal" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+                <label class="upload-file" for="file-modal">
+                  <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
+                  <span class="upload-text-reset">Прикрепить файл</span>
+                </label>
+              </div>
+              <div class="form-group form-modal__checkbox">
+                <input id="chk-modal" type="checkbox" class="js-policy js-policy-2 form-modal__policy" checked="">
+                <label for="chk-modal">Подтверждаю свое согласие на <a href="policy-1.pdf" target="_blank" class="form-main__checkbox-link" target="_blank">обработку</a> персональных данных</label>
+              </div>
+              <div class="form-group text-center">
+                <button class="btn btn-lg bg-btn-blue form-btn-2" type="submit" name="submit">Отправить</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="modal-my__overlay">
+        <div class="modal-my__overlay-text">Заявка отправляется...</div>
+        <div class="spinner d-flex justify-content-center align-items-center h-100">
+          <div class="bounce1"></div>
+          <div class="bounce2"></div>
+          <div class="bounce3"></div>
+        </div>
+      </div>
+
+      <!-- <div class="modal-footer">
+         <button type="button" class="btn btn-lg btn-block btn-primary d-flex align-items-center">
+           Отправить
+           <i class="fe-user-plus ml-auto"></i>
+         </button>
+       </div>-->
+
+    </div>
+  </div>
+</div>
+<!--====================  End modal  ====================-->

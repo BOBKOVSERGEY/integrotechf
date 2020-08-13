@@ -1,0 +1,26 @@
+.bg-blue {
+  background-color: $colorPrimary;
+  color: white;
+  border-color: $colorPrimary;
+}
+.bg-gray {
+  background: #F8F8F8;
+}
+
+.bg-red {
+  background-color: $colorRed;
+}
+
+.bg-btn-white {
+  color: #333;
+  background-color: white;
+  border-color: white;
+}
+.bg-btn-blue {
+  color: white;
+  background-color: $colorPrimary;
+  border-color: $colorPrimary;
+  &:hover {
+    color: white;
+  }
+}
