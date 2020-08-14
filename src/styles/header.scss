@@ -831,6 +831,9 @@
 
 .navigation-menu > ul > li {
   margin: 0 15px;
+  @media only screen and (max-width : 1400px) {
+    margin: 0 13px 0 0;
+  }
 }
 
 
@@ -842,6 +845,9 @@
   font-family: $fontMedium;
   font-size: 1rem;
   line-height: 1.18;
+  @media only screen and (max-width : 1400px) {
+    font-size: .9rem;
+  }
 }
 
 .navigation-menu > ul > li > a > span {
@@ -945,7 +951,10 @@
 }
 
 .header-bottom-left-wrap .navigation-menu > ul > li:first-child {
-  margin: 0 24px 0 0;
+  margin: 0 15px 0 0;
+  @media only screen and (max-width : 1400px) {
+    margin: 0 10px 0 0;
+  }
 }
 
 /*===================================
@@ -2340,6 +2349,7 @@
 
 
 .selectCustom-trigger {
+  font-family: $fontMedium;
   position: relative;
   width: 100%;
   height: 100%;
@@ -2366,9 +2376,7 @@
   font-weight: 600;
 }
 
-.selectCustom-trigger:hover {
-  border-color: #8c00ff;
-}
+
 
 .selectCustom-options {
   position: absolute;

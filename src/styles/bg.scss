@@ -24,3 +24,15 @@
     color: white;
   }
 }
+
+.bg-gray-svg {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 10;
+  & svg {
+    width: 100%;
+    display: block;
+    fill: #efefef;
+  }
+}
