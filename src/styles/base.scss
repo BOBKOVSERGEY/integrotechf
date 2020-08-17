@@ -126,6 +126,9 @@ button {
     }
   }
 }
+a {
+  color: $colorBlue;
+}
 .snlist {
   padding: 0;
   margin: 16px 0 20px;
@@ -185,33 +188,7 @@ button {
   position: fixed!important;
   width: 100%!important;
 }
-.sn-link {
-  position: relative;
-  color: $colorRed;
-  &:hover {
-    color: $colorDark;
-    &:before {
-      width: 100%;
-      left: 0;
-      right: auto;
-    }
-  }
-  &:before {
-    content: '';
-    width: 0;
-    height: 1px;
-    bottom: -1px;
-    position: absolute;
-    left: auto;
-    right: 0;
-    z-index: 1;
-    -webkit-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
-    -o-transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
-    transition: width .6s cubic-bezier(.25,.8,.25,1) 0s;
-    background: currentColor;
 
-  }
-}
 
 
 

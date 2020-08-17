@@ -1,0 +1,9 @@
+.heading {
+  &__main {
+    font-family: $fontBold;
+    text-align: center;
+    color: $colorBlue;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+  }
+}
