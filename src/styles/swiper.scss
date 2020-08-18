@@ -7,12 +7,6 @@
   z-index: 1;
 }
 
-.swiper-container {
-  height: calc(100vh - 81px);
-  @media only screen and (max-width : 992px) {
-    height: calc(100vh - 110px);
-  }
-}
 .gallery-top {
   max-height: 600px;
   @media only screen and (max-width : 768px) {

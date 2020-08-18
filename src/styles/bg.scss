@@ -29,18 +29,21 @@
   width: 100%;
   position: absolute;
   bottom: -1px;
-  z-index: 5;
+  z-index: 3;
   & svg {
     width: 100%;
     display: block;
     fill: #efefef;
+  }
+  &_zi {
+    z-index: -2;
   }
 }
 .bg-gray-rotate-svg {
   width: 100%;
   position: absolute;
   top: -1px;
-  z-index: 5;
+  z-index: 2;
   & svg {
     width: 100%;
     display: block;

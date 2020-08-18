@@ -1,6 +1,7 @@
 .solution-map {
   padding: 80px 0 50px 0;
   position: relative;
+  overflow: hidden;
   &:before {
     content: '';
     position: absolute;

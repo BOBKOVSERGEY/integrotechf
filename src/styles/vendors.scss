@@ -1,0 +1,17 @@
+.vendors {
+  padding: 80px 0 100px 0;
+  position: relative;
+}
+.brand-logo {
+  align-self: center;
+  text-align: center;
+  position: relative;
+}
+
+.brand-logo__image {
+  transition: all .4s linear;
+}
+
+.brand-logo:hover .brand-logo__image {
+  transform: scale(0.8, 0.8);
+}

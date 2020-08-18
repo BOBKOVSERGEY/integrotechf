@@ -466,6 +466,39 @@
     });
   }
   
+  
+  /**
+   * swiper
+   */
+  var brandLogoSlider = new Swiper('.brand-logo-slider__container', {
+    slidesPerView : 5,
+    loop: true,
+    speed: 1000,
+    spaceBetween : 30,
+    autoplay: {
+      delay: 3000,
+    },
+    
+    breakpoints: {
+      1499:{
+        slidesPerView : 6
+      },
+      
+      991:{
+        slidesPerView : 4
+      },
+      
+      767:{
+        slidesPerView : 3
+        
+      },
+      
+      575:{
+        slidesPerView : 2
+      }
+    }
+  });
+  
   /* Features needed to make the selectCustom work for mouse users.
 
 - Toggle custom select visibility when clicking the "box"

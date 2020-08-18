@@ -1,50 +1,9 @@
 .contact-us {
-  padding: 100px 0 70px 0;
-  background-image: url(../images/bg-contact-us.png);
+  background-color: white;
+  position: relative;
+  padding: 200px 0;
+  background-image: url(../images/contact-us-bg.jpg);
   background-repeat: no-repeat;
-  background-position: top right;
-  &-item {
-    text-align: center;
-    margin-bottom: 30px;
-    &__icon {
-      margin-bottom: 30px;
-      & img {
-        width: 60px;
-        height: 60px;
-      }
-    }
-    &__heading {
-      font-family: $fontMedium;
-      font-size: 25px;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-      color: #696969;
-    }
-    &__description {
-      & a {
-        color: #333;
-        position: relative;
-
-        //border-bottom: 1px solid $colorSecondary;
-        &:hover::before {
-          width: 100%;
-          left: 0;
-          right: auto;
-        }
-        &:before {
-          content: '';
-          width: 0;
-          height: 1px;
-          bottom: -1px;
-          position: absolute;
-          left: auto;
-          right: 0;
-          z-index: 1;
-          transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
-          background: currentColor;
-        }
-      }
-
-    }
-  }
+  background-position: top 100px center;
+  background-size: cover;
 }
