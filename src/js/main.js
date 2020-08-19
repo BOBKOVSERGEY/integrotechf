@@ -499,6 +499,217 @@
     }
   });
   
+  /*en swiper*/
+  
+  /**
+   * form
+   */
+  
+  var inputs = document.querySelectorAll( '.inputfile' );
+  Array.prototype.forEach.call( inputs, function( input )
+  {
+    var label	 = input.nextElementSibling,
+        labelVal = label.innerHTML;
+    
+    input.addEventListener( 'change', function( e )
+    {
+      var fileName = '';
+      if( this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+      else
+        fileName = e.target.value.split( '\\' ).pop();
+      
+      if( fileName )
+        label.querySelector( 'span' ).innerHTML = fileName;
+      else
+        label.innerHTML = labelVal;
+    });
+  });
+  
+  var inputsModal = document.querySelectorAll( '.inputfilemodal' );
+  Array.prototype.forEach.call( inputsModal, function( input )
+  {
+    var label	 = input.nextElementSibling,
+        labelVal = label.innerHTML;
+    
+    input.addEventListener( 'change', function( e )
+    {
+      var fileName = '';
+      if( this.files && this.files.length > 1 )
+        fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
+      else
+        fileName = e.target.value.split( '\\' ).pop();
+      
+      if( fileName )
+        label.querySelector( 'span' ).innerHTML = fileName;
+      else
+        label.innerHTML = labelVal;
+    });
+  });
+  
+  /*******end inputfile******/
+  
+  function checkPolicy(checkbox, btn) {
+    if ($(checkbox).is(':checked')) {
+      $(btn).prop('disabled', false);
+      
+    } else {
+      $(btn).prop('disabled', true);
+      
+    }
+  }
+  
+  $('.js-policy-1').on('click', function(){
+    checkPolicy(this, '.form-btn-1');
+  });
+  $('.js-policy-2').on('click', function(){
+    checkPolicy(this, '.form-btn-2');
+  });
+  
+  $('.form').validate({
+    
+    submitHandler: function(form){
+      
+      var formData = new FormData($('.form')[0]),
+          xhr = new XMLHttpRequest();
+      
+      xhr.open("POST", "/send-main.php", true);
+      
+      var contactLoaderText = document.querySelector('.contact-form__overlay-text');
+      contactLoaderText.textContent = 'Заявка отправляется...';
+      var contactLoader = document.querySelector('.contact-form__overlay');
+      contactLoader.style.visibility = 'visible';
+      contactLoader.style.opacity = '1';
+      
+      
+      xhr.onprogress = function () {
+      
+      };
+      
+      // ready state 4
+      xhr.onload = function () {
+        if (this.status === 200) {
+          contactLoaderText.textContent = 'Заявка успешно отправлена!';
+          setTimeout(function () {
+            contactLoader.style.visibility = 'hidden';
+            contactLoader.style.opacity = '0';
+            form.reset();
+            $('.upload-text-reset').text('Прикрепить файл');
+          }, 3000);
+          
+        } else if (this.status === 404) {
+          //document.getElementById('error').innerHTML = 'Not Found';
+          console.log('Some error');
+        }
+      }
+      
+      xhr.onerror = function() {
+        console.log('Some error');
+      };
+      
+      xhr.send(formData);
+    },
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+      
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      },
+      phone: {
+        required: "Введите Ваш телефон"
+      }
+    }
+  });
+  $('.form-modal').validate({
+    
+    submitHandler: function(form){
+      
+      var formData = new FormData($('.form-modal')[0]),
+          xhr = new XMLHttpRequest();
+      
+      xhr.open("POST", "/send-main.php", true);
+      
+      var contactLoaderText = document.querySelector('.modal-my__overlay-text');
+      contactLoaderText.textContent = 'Заявка отправляется...';
+      var contactLoader = document.querySelector('.modal-my__overlay');
+      contactLoader.style.visibility = 'visible';
+      contactLoader.style.opacity = '1';
+      
+      
+      xhr.onprogress = function () {
+      
+      }
+      
+      
+      // ready state 4
+      xhr.onload = function () {
+        if (this.status === 200) {
+          contactLoaderText.textContent = 'Заявка успешно отправлена!';
+          setTimeout(function () {
+            contactLoader.style.visibility = 'hidden';
+            contactLoader.style.opacity = '0';
+            form.reset();
+            $('.upload-text-reset').text('Прикрепить файл');
+            $('.modal').modal('hide');
+          }, 3000);
+          
+        } else if (this.status === 404) {
+          //document.getElementById('error').innerHTML = 'Not Found';
+          console.log('Some error');
+        }
+      }
+      
+      xhr.onerror = function() {
+        console.log('Some error');
+      };
+      
+      xhr.send(formData);
+    },
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+      
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      },
+      phone: {
+        required: "Введите Ваш телефон"
+      }
+    }
+  });
+  /**
+   * end form
+   */
+  
   /* Features needed to make the selectCustom work for mouse users.
 
 - Toggle custom select visibility when clicking the "box"
