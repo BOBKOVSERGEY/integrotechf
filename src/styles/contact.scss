@@ -1,0 +1,77 @@
+.contact {
+  padding: 80px 0 100px;
+  position: relative;
+  z-index: 3;
+  //background-color: $colorLightGrayBg;
+  &__item {
+    display: flex;
+    //align-items: center;
+
+    @media only screen and (max-width : 992px) {
+      margin-bottom: 30px;
+    }
+    &:hover .contact__item-icon span:after {
+      transform: translateX(0);
+    }
+  }
+  &__item-icon {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    background-color: rgba($colorBlue, 1);
+    color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 14px;
+    flex: 0 0 auto;
+    z-index: 1;
+    overflow: hidden;
+    font-size: 1.2rem;
+    & span:after {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: -1px;
+      right: -1px;
+      top: -1px;
+      bottom: -1px;
+      transition: .3s;
+      z-index: -1;
+      transform: translateX(-100%);
+      border-radius: 50%;
+      background: #7f7f7f;
+    }
+  }
+
+  &__item-heading {
+    color: $colorBlue;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  &__item-desc {
+    & a {
+      color: $colorBlue;
+      font-size: 1.2rem;
+      position: relative;
+      transition: all .2s;
+      &:before {
+        content: '';
+        width: 0;
+        height: 1px;
+        bottom: -1px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        z-index: 1;
+        transition: width 0.6s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+        background: currentColor;
+      }
+      &:hover::before {
+        width: 100%;
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+}

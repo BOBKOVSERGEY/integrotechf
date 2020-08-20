@@ -32,10 +32,10 @@
       <nav class="offcanvas-navigation">
         <ul>
           <li class="has-children">
-            <a href="about.html">О компании</a>
+            <a href="#">О компании</a>
           </li>
           <li class="has-children">
-            <a href="catalog.html">Продукция</a>
+            <a href="#">Решения</a>
             <!--<ul class="sub-menu">
               <li class="has-children">
                 <a href="#">Category Group 01</a>
@@ -85,7 +85,7 @@
             </ul>-->
           </li>
           <li class="has-children">
-            <a href="services.html">Услуги</a>
+            <a href="#">Центры компетенций</a>
           </li>
           <!--<li class="has-children">
             <a href="javascript:void(0)">Услуги</a>
@@ -96,14 +96,13 @@
             </ul>
           </li>-->
           <li class="has-children">
-            <a href="#">Пресс-центер</a>
-            <ul class="sub-menu">
-              <li><a href="news.html"><span>Новости компании</span></a></li>
-              <li><a href="our-works.html"><span>Наши работы</span></a></li>
-            </ul>
+            <a href="#">Новости</a>
           </li>
           <li class="has-children">
-            <a href="contacts.html">Контакты</a>
+            <a href="#">Проекты</a>
+          </li>
+          <li class="has-children">
+            <a href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -118,12 +117,14 @@
 
       <div class="modal-header">
         <div class="media flex-fill align-items-center">
-          <div class="modal-my__icon">
+          <!--<div class="modal-my__icon">
             <i class="far fa-paper-plane"></i>
-          </div>
+          </div>-->
           <div class="media-body align-self-center">
             <h5 class="modal-title">Связаться с нами</h5>
-            <p class="small">Чтобы сделать запрос на дополнительную информацию, свяжитесь с нами</p>
+            <div class="row justify-content-center">
+              <div class="col-md-10"><p class="small text-center">Чтобы сделать запрос на дополнительную информацию, свяжитесь с нами</p></div>
+            </div>
           </div>
         </div>
 
@@ -135,24 +136,19 @@
       <div class="modal-body">
         <form class="form-modal"  method="post" enctype="multipart/form-data">
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="form-group">
                 <input type="text" class="form-control form-control-lg" name="name" placeholder="Ваше имя, компания">
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="form-group">
                 <input type="email" class="form-control form-control-lg" name="email" placeholder="Ваш email">
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
               <div class="form-group">
                 <input type="text" class="form-control form-control-lg" name="phone" placeholder="Ваш телефон">
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg" name="subject" placeholder="Тема сообщения">
               </div>
             </div>
           </div>
@@ -174,22 +170,22 @@
                 <input id="chk-modal" type="checkbox" class="js-policy js-policy-2 form-modal__policy" checked="">
                 <label for="chk-modal">Подтверждаю свое согласие на <a href="policy-1.pdf" target="_blank" class="form-main__checkbox-link" target="_blank">обработку</a> персональных данных</label>
               </div>
-              <div class="form-group text-center">
-                <button class="btn btn-lg bg-btn-blue form-btn-2" type="submit" name="submit">Отправить</button>
+              <div class="form-group text-center form-modal__btn">
+                <button class="btn__header form-btn-2" type="submit" name="submit">Отправить</button>
               </div>
             </div>
           </div>
         </form>
       </div>
 
-      <div class="modal-my__overlay">
+      <!--<div class="modal-my__overlay">
         <div class="modal-my__overlay-text">Заявка отправляется...</div>
         <div class="spinner d-flex justify-content-center align-items-center h-100">
           <div class="bounce1"></div>
           <div class="bounce2"></div>
           <div class="bounce3"></div>
         </div>
-      </div>
+      </div>-->
 
       <!-- <div class="modal-footer">
          <button type="button" class="btn btn-lg btn-block btn-primary d-flex align-items-center">

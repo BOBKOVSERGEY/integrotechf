@@ -50,3 +50,25 @@
     fill: #efefef;
   }
 }
+.bg-top-map-svg {
+  width: 100%;
+  position: absolute;
+  top: -1px;
+  z-index: 2;
+  & svg {
+    width: 100%;
+    display: block;
+    fill: #efefef;
+  }
+}
+.bg-bottom-map-svg {
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  z-index: 2;
+  & svg {
+    width: 100%;
+    display: block;
+    fill: #fff;
+  }
+}

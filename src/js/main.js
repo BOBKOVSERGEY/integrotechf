@@ -29,8 +29,7 @@
    * end preloader
    */
   
-  /**
-   * year copyright
+  
  
   let now = new Date();
   let getYear = now.getFullYear();
@@ -38,7 +37,7 @@
   if (elCopyrightYear) {
     elCopyrightYear.innerHTML = getYear;
   }
-   */
+  
   
   /*===========================================
       =            Submenu viewport position      =

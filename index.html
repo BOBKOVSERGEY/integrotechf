@@ -286,9 +286,10 @@
                               <li>
                                 <a href="#"><span>О компании</span></a>
                               </li>
-                              <li class="has-children">
+                              <!--class="has-children"-->
+                              <li>
                                 <a href="#"><span>Решения</span></a>
-                                <ul class="megamenu megamenu--mega">
+                                <!--<ul class="megamenu megamenu--mega">
                                   <li>
                                     <h2 class="page-list-title">ELEMENT GROUP 01</h2>
                                     <ul>
@@ -337,7 +338,7 @@
                                       <li><a href="element-typed-text.html"><span>Typed Text</span></a></li>
                                     </ul>
                                   </li>
-                                </ul>
+                                </ul>-->
                               </li>
                               <li>
                                 <a href="#"><span>Центры компетенций</span></a>
@@ -372,7 +373,7 @@
                     </form>
                   </div>
                   <!-- language-menu -->
-                  <div class="selectWrapper">
+                  <div class="selectWrapper d-none d-xl-block">
                     <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
                       <option value="ru" disabled="" selected="">RU</option>
                       <option value="en">EN</option>
@@ -388,7 +389,7 @@
                       </div>
                     </div>
                   </div>
-                  <button class="btn__header d-none d-md-block" data-toggle="modal" data-target="#request">Связаться с нами</button>
+                  <button class="btn__header d-none d-xl-block" data-toggle="modal" data-target="#request">Связаться с нами</button>
                   <!-- mobile menu -->
                   <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
                     <i></i>
@@ -778,6 +779,140 @@
           </div>
     
         </div>
+        <div class="bg-gray-svg">
+          <svg viewBox="0 0 2880 235.47"><path class="cls-1" d="M0,92.16,984.84,235,2880,0V235.47H0Z" transform="translate(0 0)"/></svg>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <span class="fa fa-phone"></span>
+                </div>
+                <div class="contact__item-info">
+                  <div class="contact__item-heading">
+                    Позвонить нам
+                  </div>
+                  <div class="contact__item-desc">
+                    <a href="tel:+74956266869">+7 (495) 626-68-69</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <span class="fa fa-envelope"></span>
+                </div>
+                <div class="contact__item-info">
+                  <div class="contact__item-heading">
+                    Написать нам
+                  </div>
+                  <div class="contact__item-desc">
+                    <a href="mailto:info@integrotech.ru">info@integrotech.ru</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="contact__item">
+                <div class="contact__item-icon">
+                  <span class="fa fa-map-marker-alt"></span>
+                </div>
+                <div class="contact__item-info">
+                  <div class="contact__item-heading">
+                    Приехать к нам
+                  </div>
+                  <div class="contact__item-desc">
+                    <a href="https://yandex.ru/maps/213/moscow/?ll=37.651134%2C55.717430&mode=search&oid=1137077758&ol=biz&sctx=ZAAAAAgCEAAaKAoSCYnQCDauz0JAEabtX1lp4EtAEhIJ9NHu%2F%2F9J%2Fz8RcIyEwTN05j8iBQABAgQFKAowADijqYDpk9bVtLsBQLeeAUgBVc3MzD5YAGoCcnVwAJ0BzcxMPaABAKgBAL0BGEEQc8IBBf7bmZ4E&sll=37.651134%2C55.717430&sspn=0.254826%2C0.087882&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%94%D0%B5%D1%80%D0%B1%D0%B5%D0%BD%D0%B5%D0%B2%D1%81%D0%BA%D0%B0%D1%8F%20%D0%BD%D0%B0%D0%B1.%2C%20%D0%B4.%2011%2C%20%D0%91%D0%A6%20%C2%AB%D0%9F%D0%BE%D0%BB%D0%BB%D0%B0%D1%80%D1%81%C2%BB&z=12.94" target="_blank">Москва, Дербеневская наб., д. 11, БЦ «Полларс», оф. 408</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="rd-google-map">
+        <div class="bg-top-map-svg">
+          <svg  viewBox="0 0 2880 235"><polygon class="cls-1" points="2880 0 984.84 235 0 92.16 0 0 2880 0"/></svg>
+        </div>
+        <div id="google-map" data-zoom="17" data-x="37.6508341" data-y="55.7208871" class="rd-google-map__model"></div>
+        <ul class="rd-google-map__locations">
+          <li data-x="37.6508341" data-y="55.7208871">
+            <h5>Акционерное общество «ИНТЕГРО ТЕКНОЛОДЖИЗ»</h5>
+            <address class="contact-info">
+              <p>109548, г.Москва, ул. Шоссейная, д. 1, корп.2, помещение 1, этаж 1, каб. 36</p>
+              <br>
+              <dl>
+                <dd><a href="tel:+74956266869"><i class="fa fa-phone" aria-hidden="true"></i>  +7 (495) 626-68-69</a></dd>
+              </dl>
+              <dl>
+                <dd><a href="mailto:info@integrotech.ru"><i class="fa fa-envelope"></i> info@integrotech.ru</a></dd>
+              </dl>
+            </address>
+          </li>
+        </ul>
+        <div class="bg-bottom-map-svg">
+          <svg viewBox="0 0 2880 235"><polygon points="0 235 1895.16 0 2880 142.84 2880 235 0 235"/></svg>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="container">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-item">
+                  <div class="footer-item__logo">
+                    <a href="/"><img src="dist/images/logo.svg" alt=""></a>
+                  </div>
+                </div>
+                <ul class="footer__list">
+                  <li><a href="#" target="_blank">Политика обработки персональных данных</a></li>
+                  <li><a href="#" target="_blank">Политика обработки персональных данных по поручению</a></li>
+                  <li><a href="#" target="_blank">Изменения политики лицензирования ПО производства АО "Интегро Текнолоджиз"</a></li>
+                </ul>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-item">
+                  <h3>Реквизиты компании</h3>
+                  <p>Акционерное общество «ИНТЕГРО ТЕКНОЛОДЖИЗ»<br>
+                    109548, г.Москва, ул. Шоссейная, д. 1, корп.2, помещение 1, этаж 1, каб. 36<br>
+                    ОГРН 1027700253130<br>
+                    ИНН 7725168525<br>
+                    КПП 772301001
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="footer-item">
+                  <h3>Банковские рекизиты</h3>
+                  <p>КБ "ЛОКО-БАНК" (АО) Г. МОСКВА<br>
+                    Кор/сч. 30101810945250000161<br>
+                    Р/сч. 40702810500130663000<br>
+                    БИК 044525161
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer__line"></div>
+            <div class="row align-items-center footer__copyright-area">
+              <div class="col-lg-6">
+                <span class="copyright-text">© <span id="copyright-year">2022</span> АО «Интегро Текнолоджиз»</span>
+              </div>
+              <div class="col-lg-6 d-flex justify-content-lg-end footer__brand-sd justify-content-sm-start">
+                <a href="//esdi.ru" target="_blank" class="d-flex align-items-center footer-logo-sd" >
+                  <div class="footer-logo-sd__icon">
+                    <span><img src="dist/images/logo-sd.svg" alt=""></span>
+                  </div>
+                  <span class="footer-logo-sd__text">Сделано в ЭСДИ</span>
+                </a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     
@@ -815,10 +950,10 @@
           <nav class="offcanvas-navigation">
             <ul>
               <li class="has-children">
-                <a href="about.html">О компании</a>
+                <a href="#">О компании</a>
               </li>
               <li class="has-children">
-                <a href="catalog.html">Продукция</a>
+                <a href="#">Решения</a>
                 <!--<ul class="sub-menu">
                   <li class="has-children">
                     <a href="#">Category Group 01</a>
@@ -868,7 +1003,7 @@
                 </ul>-->
               </li>
               <li class="has-children">
-                <a href="services.html">Услуги</a>
+                <a href="#">Центры компетенций</a>
               </li>
               <!--<li class="has-children">
                 <a href="javascript:void(0)">Услуги</a>
@@ -879,14 +1014,13 @@
                 </ul>
               </li>-->
               <li class="has-children">
-                <a href="#">Пресс-центер</a>
-                <ul class="sub-menu">
-                  <li><a href="news.html"><span>Новости компании</span></a></li>
-                  <li><a href="our-works.html"><span>Наши работы</span></a></li>
-                </ul>
+                <a href="#">Новости</a>
               </li>
               <li class="has-children">
-                <a href="contacts.html">Контакты</a>
+                <a href="#">Проекты</a>
+              </li>
+              <li class="has-children">
+                <a href="#">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -901,12 +1035,14 @@
     
           <div class="modal-header">
             <div class="media flex-fill align-items-center">
-              <div class="modal-my__icon">
+              <!--<div class="modal-my__icon">
                 <i class="far fa-paper-plane"></i>
-              </div>
+              </div>-->
               <div class="media-body align-self-center">
                 <h5 class="modal-title">Связаться с нами</h5>
-                <p class="small">Чтобы сделать запрос на дополнительную информацию, свяжитесь с нами</p>
+                <div class="row justify-content-center">
+                  <div class="col-md-10"><p class="small text-center">Чтобы сделать запрос на дополнительную информацию, свяжитесь с нами</p></div>
+                </div>
               </div>
             </div>
     
@@ -918,24 +1054,19 @@
           <div class="modal-body">
             <form class="form-modal"  method="post" enctype="multipart/form-data">
               <div class="row">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" name="name" placeholder="Ваше имя, компания">
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="form-group">
                     <input type="email" class="form-control form-control-lg" name="email" placeholder="Ваш email">
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-4">
                   <div class="form-group">
                     <input type="text" class="form-control form-control-lg" name="phone" placeholder="Ваш телефон">
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control form-control-lg" name="subject" placeholder="Тема сообщения">
                   </div>
                 </div>
               </div>
@@ -957,22 +1088,22 @@
                     <input id="chk-modal" type="checkbox" class="js-policy js-policy-2 form-modal__policy" checked="">
                     <label for="chk-modal">Подтверждаю свое согласие на <a href="policy-1.pdf" target="_blank" class="form-main__checkbox-link" target="_blank">обработку</a> персональных данных</label>
                   </div>
-                  <div class="form-group text-center">
-                    <button class="btn btn-lg bg-btn-blue form-btn-2" type="submit" name="submit">Отправить</button>
+                  <div class="form-group text-center form-modal__btn">
+                    <button class="btn__header form-btn-2" type="submit" name="submit">Отправить</button>
                   </div>
                 </div>
               </div>
             </form>
           </div>
     
-          <div class="modal-my__overlay">
+          <!--<div class="modal-my__overlay">
             <div class="modal-my__overlay-text">Заявка отправляется...</div>
             <div class="spinner d-flex justify-content-center align-items-center h-100">
               <div class="bounce1"></div>
               <div class="bounce2"></div>
               <div class="bounce3"></div>
             </div>
-          </div>
+          </div>-->
     
           <!-- <div class="modal-footer">
              <button type="button" class="btn btn-lg btn-block btn-primary d-flex align-items-center">
