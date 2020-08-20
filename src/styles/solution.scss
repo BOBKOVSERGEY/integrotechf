@@ -234,3 +234,15 @@
     }
   }
 }
+
+.solution-item {
+  margin-bottom: 30px;
+  padding: 80px 15px 80px 50px;
+  background: url(../images/solution-bg.svg) 0 0  no-repeat;
+  //background-size: 100%;
+  &-2 {
+    padding: 80px 15px 80px 50px;
+    background-color: #fff;
+    clip-path: polygon(65% 0,100% 40%,100% 100%,38% 100%,0 77%,0 24%);
+  }
+}

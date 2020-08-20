@@ -1,0 +1,52 @@
+.overlay {
+  height: 330px;
+  position: relative;
+  background: url(../images/overlay.jpg) no-repeat center center;
+  background-size: cover;
+  z-index: 1;
+  &__wrapper {
+    height: 330px;
+    display: flex;
+    align-items: center;
+  }
+  &__content {
+    height: 330px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    & h1 {
+      font-size: 2.4rem;
+      font-family: $fontBold;
+      color: $colorBlue;
+    }
+  }
+  &__breadcrumb {
+    padding: 8px 0px;
+    margin: 10px 0 20px 0;
+    list-style: none;
+    display: inline-block;
+    font-size: .9rem;
+    &>.active {
+      color: #777;
+    }
+    & a {
+      color: #262424;
+      &:hover {
+        border-bottom: 1px solid #262424;
+      }
+    }
+    &>li {
+      display: inline-block;
+    }
+    &>li+li:before {
+      padding: 0 5px;
+      color: #262424;
+      content: "/\00a0";
+    }
+  }
+  & h1 {
+
+  }
+}

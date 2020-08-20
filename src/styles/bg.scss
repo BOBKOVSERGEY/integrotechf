@@ -72,3 +72,14 @@
     fill: #fff;
   }
 }
+.bg-for-footer {
+  width: 100%;
+  position: relative;
+  bottom: -1px;
+  z-index: 2;
+  & svg {
+    width: 100%;
+    display: block;
+    fill: #fff;
+  }
+}

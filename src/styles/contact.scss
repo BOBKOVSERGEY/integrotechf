@@ -3,6 +3,9 @@
   position: relative;
   z-index: 3;
   //background-color: $colorLightGrayBg;
+  @media only screen and (max-width : 480px) {
+    padding: 50px 0;
+  }
   &__item {
     display: flex;
     //align-items: center;
