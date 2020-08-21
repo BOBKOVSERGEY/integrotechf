@@ -145,10 +145,11 @@
   &__anons {
     font-family: $fontMedium;
     font-size: .9rem;
+    margin: 15px 0;
   }
   &__img {
     position: relative;
-
+    display: inline-block;
   }
   &__label {
     position: absolute;
