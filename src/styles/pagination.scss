@@ -1,0 +1,32 @@
+.pagination-wrapper {
+  margin-top: 30px;
+}
+.page-pagination li {
+  display: inline-block;
+}
+
+.page-pagination li a {
+  font-weight: 500;
+  padding: 0 10px;
+  display: block;
+  text-align: center;
+  line-height: 41px;
+  min-width: 41px;
+  height: 41px;
+  text-transform: uppercase;
+  color: #ababab;
+  letter-spacing: 2px;
+  border-radius: 5px;
+}
+
+.page-pagination li a.current {
+  background: $colorBlue;
+  color: #fff;
+  &:hover {
+    color: rgba(white, .8);
+  }
+}
+
+.page-pagination li a:hover {
+  color: $colorBlue;
+}

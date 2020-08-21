@@ -1,0 +1,162 @@
+.accordion .card {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  overflow: visible; }
+.accordion .card .card-header {
+  padding: 0;
+  border: 0;
+  background: transparent; }
+.accordion .card .card-header > * {
+  font-family: $fontMedium;
+  color: $colorBlue;
+}
+.accordion .card .card-header button {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  position: relative;
+  width: 100%;
+  padding: 20px 30px;
+  text-align: left;
+  text-transform: none;
+  font-size: 1.2rem;
+  letter-spacing: 0;
+  color: inherit;
+  white-space: normal;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+.accordion .card .card-header button:hover {
+  text-decoration: none;
+
+}
+.accordion .card .card-header button::before {
+  position: absolute;
+  content: "\ebfa";
+  width: 1em;
+  line-height: 1em;
+  right: 30px;
+  top: 50%;
+  font-family: 'icomoon' !important;
+  font-size: 1.5rem;
+  margin-top: -0.5em;
+  color: #999999;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s; }
+.accordion .card .card-header button[aria-expanded="true"]::before {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg); }
+.accordion .card .card-body {
+  padding: 0 30px 30px 30px;
+}
+.accordion-list {
+  background: transparent; }
+.accordion-list .card {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  box-shadow: none;
+  //border-radius: 0.25rem;
+  padding-left: 3.125rem;
+  background: transparent;
+  border-color: transparent;
+  counter-increment: accordion;
+  &:hover {
+    box-shadow: 8px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+.accordion-list .card:not(:first-of-type):not(:last-of-type), .accordion-list .card:first-of-type {
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+}
+.accordion-list .card:not(:first-child) {
+  margin-top: 30px; }
+.accordion-list .card:hover:not(:first-of-type):not(:last-of-type), .accordion-list .card:hover:first-of-type {
+  border-bottom-color: #e5e5e5; }
+
+/*.accordion-list .card::before {
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  content: counter(accordion, decimal);
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 10px;
+  width: 3.125rem;
+  height: 3.125rem;
+  color: #fff;
+  line-height: 3.125rem;
+  text-align: center;
+  z-index: 20;
+  border-radius: 0.25rem;
+  background: #999999;
+  font-size: 1rem;
+  font-weight: 600; }
+*/
+.accordion-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 3.125rem;
+  height: 3.125rem;
+  text-align: center;
+  transform: translate(0, -50%);
+  background: #999999;
+  z-index: 20;
+  transition: all 0.2s;
+  transition-delay: 0s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  & img {
+    max-width: 30px;
+  }
+}
+.accordion-list .card.active:not(:first-of-type):not(:last-of-type), .accordion-list .card.active:first-of-type {
+  border-bottom-color: #e5e5e5; }
+.accordion-list .card.active .accordion-icon {
+  transform: translate(-20px, -50%);
+  background: $colorBlue;
+}
+/*
+.accordion-list .card.active::before {
+  -webkit-transform: translate(-20px, -50%);
+  -moz-transform: translate(-20px, -50%);
+  transform: translate(-20px, -50%);
+  background: $colorBlue;
+  color: #fff; }
+*/
+.accordion-list .card .card-header button {
+  line-height: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  &:focus {
+    text-decoration: none;
+  }
+}
+.accordion-list .card .card-header button::before {
+  display: none; }
