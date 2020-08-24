@@ -28,6 +28,7 @@
     background: url(../images/bg-about-banner.svg) no-repeat;
     font-family: $fontMedium;
     margin-left: auto;
+    animation: shake-animation 4.72s ease infinite;
     @media only screen and (max-width : 992px) {
       margin: 0 auto;
     }
@@ -59,10 +60,12 @@
   }
   &__list {
     & li {
+      font-family: $fontMedium;
       margin-bottom: 15px;
       padding-left: 25px;
       position: relative;
       transition: all .3s;
+
       &:before {
         content: '';
         position: absolute;
@@ -109,4 +112,15 @@
   75% {
     transform: translate3d(0, 0, 0) scale(1.1) rotate(0.001deg);
   }
+}
+
+@keyframes shake-animation {
+  0% { transform:rotate(0) scale(1)}
+  1.78571% { transform:rotate(5deg) scale(1.1)}
+  3.57143% { transform:rotate(0)  }
+  5.35714% { transform:rotate(-5deg) }
+  7.14286% { transform:rotate(0) }
+  8.92857% { transform:rotate(5deg) }
+  10.71429% { transform:rotate(0) }
+  100% { transform:rotate(0) }
 }

@@ -1,6 +1,13 @@
 .solution-map {
   padding: 80px 0 50px 0;
   position: relative;
+  &__cluster-link {
+    font-family: $fontBold;
+    margin-bottom: 15px;
+    //margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+  }
   &:before {
     content: '';
     position: absolute;
@@ -30,6 +37,7 @@
     color: white;
     position: relative;
     transition: all .3s;
+
     @media only screen and (max-width : 768px) {
       width: 43px;
       height: 43px;
@@ -50,12 +58,13 @@
     }
     & i {
       font-size: 1.5rem;
+      transition: all .3s;
       @media only screen and (max-width : 668px) {
         font-size: 1rem;
       }
     }
     &:hover {
-      background-color: rgba($colorBlue, .9);
+      background-color: rgba($colorBlue, .8);
     }
 
     &_1 {
@@ -107,6 +116,15 @@
     color: #333;
     transform: translateX(-20px);
     transition: all .3s .5s;
+    &_bg-light-blue {
+      border-left: 3px solid #306FC1;
+    }
+    &_bg-light-brown {
+      border-left: 3px solid #E3BE39;
+    }
+    &_bg-orange {
+      border-left: 3px solid #E37839;
+    }
     @media only screen and (max-width : 768px) {
       right: -127px;
       top: 70px;
@@ -334,6 +352,62 @@
 
     &-item {
       position: relative;
+      &:nth-child(1) {
+        &>a {
+          color: $colorBlue;
+        }
+      }
+      &:nth-child(2) {
+        &>a {
+          color: #306FC1;
+          border-left: 3px solid #306FC1;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #306FC1;
+            transform: scaleY(0);
+            transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+          }
+        }
+      }
+      &:nth-child(3) {
+        &>a {
+          color: #E3BE39;
+          border-left: 3px solid #E3BE39;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #E3BE39;
+            transform: scaleY(0);
+            transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+          }
+        }
+      }
+      &:nth-child(4) {
+        &>a {
+          color: #E37839;
+          border-left: 3px solid #E37839;
+          &:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 3px;
+            background-color: #E37839;
+            transform: scaleY(0);
+            transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
+          }
+        }
+      }
       &>a {
         font-size: 1rem;
         position: relative;
