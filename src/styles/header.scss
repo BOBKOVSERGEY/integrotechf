@@ -2282,6 +2282,18 @@
 .navigation-menu {
   //margin: 0 30px;
 }
+
+.header {
+  &__icon-phone {
+    & a {
+      font-size: 18px;
+      color: #262424;
+      & i {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
 // Both native and custom selects must have the same width/height.
 .selectNative,
 .selectCustom {

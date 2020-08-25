@@ -415,6 +415,7 @@
         transition: all .4s;
         color: #7f7f7f;
         border-left: 3px solid $colorBlue;
+        z-index: 2;
         &:before {
           content: '';
           position: absolute;

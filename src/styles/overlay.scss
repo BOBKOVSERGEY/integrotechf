@@ -4,10 +4,11 @@
   background: url(../images/overlay.jpg) no-repeat center center;
   background-size: cover;
   z-index: 1;
-  &__wrapper {
-    height: 330px;
-    display: flex;
-    align-items: center;
+  @media only screen and (max-width : 768px) {
+    height: 250px;
+  }
+  @media only screen and (max-width : 480px) {
+    height: 180px;
   }
   &__content {
     height: 330px;
@@ -17,6 +18,12 @@
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    @media only screen and (max-width : 768px) {
+      height: 250px;
+    }
+    @media only screen and (max-width : 480px) {
+      height: 180px;
+    }
     & h1 {
       font-size: 2.4rem;
       font-family: $fontBold;
@@ -27,6 +34,11 @@
       @media only screen and (max-width : 480px) {
         font-size: 1.5rem;
       }
+    }
+  }
+  &__breadcrumb-wrapper {
+    @media only screen and (max-width : 768px) {
+      display: none;
     }
   }
   &__breadcrumb {
