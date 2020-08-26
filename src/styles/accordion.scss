@@ -21,7 +21,7 @@
   -webkit-transition-delay: 0s;
   -moz-transition-delay: 0s;
   transition-delay: 0s;
-  position: relative;
+  //position: relative;
   width: 100%;
   padding: 20px 30px;
   text-align: left;
@@ -30,16 +30,32 @@
   letter-spacing: 0;
   color: inherit;
   white-space: normal;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 3.125rem;
+    height: 3.125rem;
+    transform: translate(0, -50%);
+    //background: rgba(#999999, .7);
+    z-index: 25;
+  }
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
 }
+.accordion-list .card.active .card-header button:before {
+  transform: translate(-20px, -50%);
+}
 .accordion .card .card-header button:hover {
   text-decoration: none;
 
 }
-.accordion .card .card-header button::before {
+
+/*.accordion .card .card-header button::before {
   position: absolute;
   content: "\ebfa";
   width: 1em;
@@ -60,6 +76,7 @@
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   transform: rotate(180deg); }
+*/
 .accordion .card .card-body {
   padding: 0 30px 30px 30px;
 }
@@ -159,4 +176,5 @@
   }
 }
 .accordion-list .card .card-header button::before {
-  display: none; }
+  //display: none;
+}

@@ -28,7 +28,8 @@
     background: url(../images/bg-about-banner.svg) no-repeat;
     font-family: $fontMedium;
     margin-left: auto;
-    animation: shake-animation 4.72s ease infinite;
+    animation: shake-animation 4s ease-in infinite;
+    //animation-direction: alternate;
     @media only screen and (max-width : 992px) {
       margin: 0 auto;
     }
@@ -115,12 +116,12 @@
 }
 
 @keyframes shake-animation {
-  0% { transform:rotate(0) scale(1)}
-  1.78571% { transform:rotate(5deg) scale(1.1)}
-  3.57143% { transform:rotate(0)  }
-  5.35714% { transform:rotate(-5deg) }
-  7.14286% { transform:rotate(0) }
-  8.92857% { transform:rotate(5deg) }
-  10.71429% { transform:rotate(0) }
-  100% { transform:rotate(0) }
+  0%, 20% {
+    transform: translate(0,0) scale(1) rotate(0);
+
+  }
+
+  10% {
+    transform: translate(-20px, 0px) rotate(-5deg);
+  }
 }

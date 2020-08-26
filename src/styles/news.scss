@@ -146,6 +146,26 @@
     font-family: $fontMedium;
     font-size: .9rem;
     margin: 15px 0;
+    position: relative;
+
+  }
+  &__anons-bg {
+    position: relative;
+    height: 100%;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 16px;
+      top: 0;
+      left: 50%;
+      width: calc(100% - 30px);
+      height: 100%;
+      background-color: #fff;
+      transform: translate(-50%, 0);
+      @media only screen and (max-width : 992px) {
+        background-color: rgba(#fff, .0);
+      }
+    }
   }
   &__img {
     position: relative;
