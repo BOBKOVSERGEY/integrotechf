@@ -170,3 +170,116 @@
   }
 
 }
+.projects-new {
+  &-wrap {
+    position: relative;
+    filter: drop-shadow(8px 10px 20px rgba(0, 0, 0, 0.2));
+    margin-bottom: 50px;
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+    &_2 .projects-new-item{
+      background-color: #efefef;
+    }
+    &_2 .projects-new__bg-top svg{
+      fill: #efefef;
+    }
+    &_2 .projects-new__bg-bottom svg{
+      fill: #efefef;
+    }
+    &_3 .projects-new-item__heading a{
+      color: #fff;
+    }
+    &_3 .projects-new-item__success{
+      color: #fff;
+    }
+    &_3 .projects-new-item{
+      background: #5785C1;
+    }
+    &_3 .projects-new__bg-top svg{
+      fill: #5785C1;
+    }
+    &_3 .projects-new__bg-bottom svg{
+      fill: #5785C1;
+    }
+  }
+  &-item {
+    background-color: #f7f7f7;
+    padding: 15px;
+    min-height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+    &__heading {
+      font-family: $fontMedium;
+      font-size: 1rem;
+      & a {
+        transition: all .7s cubic-bezier(.645,.045,.355,1);
+        &:hover {
+          color: rgba($colorBlue, .8);
+
+        }
+        &:before {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          z-index: 3;
+          pointer-events: auto;
+          content: "";
+          background-color: transparent;
+        }
+      }
+    }
+    &__success {
+      position: absolute;
+      bottom: 15px;
+      z-index: 2;
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+    }
+    &:hover {
+      background: $colorBlue;
+    }
+    &:hover &__success {
+      color: #fff;
+    }
+    &:hover &__heading a {
+      color: #fff;
+    }
+
+  }
+  &__bg-top {
+    position: relative;
+    bottom: -1px;
+    width: 100%;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: #f7f7f7;
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+    }
+
+  }
+  &__bg-bottom {
+    width: 100%;
+    transform: rotate(180deg);
+    position: relative;
+    top: -1px;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: #f7f7f7;
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+    }
+
+  }
+  &-wrap:hover {
+    transform: translateY(-5px);
+  }
+  &-wrap:hover &__bg-top svg {
+    fill: $colorBlue;
+  }
+  &-wrap:hover &__bg-bottom svg {
+    fill: $colorBlue;
+  }
+}

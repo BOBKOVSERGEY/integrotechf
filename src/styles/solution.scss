@@ -255,6 +255,96 @@
 
 .solution-item {
   &-wrap {
+    position: relative;
+    margin-bottom: 50px;
+    filter: drop-shadow(8px 10px 20px rgba(0, 0, 0, 0.1));
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+    &:first-child {
+      @media only screen and (max-width : 992px) {
+        margin-top: 50px;
+      }
+    }
+    &:hover .solution-item{
+      background-color: $colorBlue;
+    }
+    &:hover .solution-item__heading a{
+      color: white;
+    }
+    &:hover .solution-item__section{
+      color: white;
+    }
+
+
+  }
+  &-wrap:hover {
+    transform: translateY(-5px);
+  }
+  &-wrap:hover &__bg-top svg {
+    fill: $colorBlue;
+  }
+  &-wrap:hover &__bg-bottom svg {
+    fill: $colorBlue;
+  }
+  padding: 15px 15px 30px 50px;
+  background-color: #fff;
+
+  transition: all .7s cubic-bezier(.645,.045,.355,1);
+  @media only screen and (max-width : 768px) {
+    padding-left: 15px;
+  }
+  &__bg-top {
+    position: relative;
+    bottom: -1px;
+    width: 100%;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: #fff;
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+    }
+  }
+  &__bg-bottom {
+    width: 100%;
+    position: relative;
+    top: -1px;
+    & svg {
+      width: 100%;
+      display: block;
+      fill: #fff;
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+    }
+
+  }
+  &__heading {
+    font-size: 1.3rem;
+    font-family: $fontMedium;
+    color: $colorBlue;
+    margin-bottom: 10px;
+
+    & a {
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+      &:hover {
+        color: rgba($colorBlue, .8);
+      }
+      &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        pointer-events: auto;
+        content: "";
+        background-color: transparent;
+      }
+    }
+  }
+  &__section {
+    font-size: .9rem;
+    color: #7f7f7f;
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+  }
+  /*&-wrap {
     &:first-child {
       @media only screen and (max-width : 992px) {
         margin-top: 50px;
@@ -271,12 +361,12 @@
     &:hover .solution-item__section{
       color: white;
     }
-  }
+  }*/
   /*margin-bottom: 30px;
   padding: 80px 15px 80px 50px;
   background: url(../images/solution-bg.svg) 0 0  no-repeat;
   */
-  padding: 70px 15px 60px 50px;
+  /*padding: 70px 15px 60px 50px;
   background-color: #fff;
   clip-path: polygon(65% 0,100% 30%,100% 100%,38% 100%,0 77%,0 24%);
   margin-bottom: 50px;
@@ -314,6 +404,7 @@
     color: #7f7f7f;
     transition: all .7s cubic-bezier(.645,.045,.355,1);
   }
+   */
 }
 .solution-directions {
   background-color: white;
