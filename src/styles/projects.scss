@@ -27,11 +27,18 @@
     flex-direction: column;
     min-height: 250px;
     justify-content: center;
-    padding: 15px;
+    padding: 50px 15px;
     background: #f7f7f7;
+    /*
+    background-image: url("../images/bg-project.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+ */
     -ms-clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
     -webkit-clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
     clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
+
+
     margin-bottom: 50px;
     transition: all .7s cubic-bezier(.645,.045,.355,1);
     &-wrap {
@@ -41,7 +48,7 @@
       background: #efefef;
     }
     &_3 {
-      background: rgba(#306fc1, .55);
+      background: rgba(#306fc1, .9);
       & .projects-item__heading {
         & a {
           color: #fff;
@@ -87,6 +94,33 @@
     }
     &:hover .projects-item__success {
       color: white;
+    }
+    &__bg-top {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      & svg {
+        width: 100%;
+        display: block;
+        fill: #efefef;
+      }
+
+    }
+    &__bg-top {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      transform: rotate(180deg);
+      z-index: 3;
+      & svg {
+        width: 100%;
+        display: block;
+        fill: #efefef;
+      }
+
     }
   }
 }
