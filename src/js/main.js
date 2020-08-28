@@ -39,6 +39,14 @@
   }
   
   
+  /*bx-panel*/
+  
+  if ($('body #bx-panel').length > 0) {
+    $('.header-area--absolute').css({
+      top: '40' + 'px'
+    })
+  }
+  
   /*===========================================
       =            Submenu viewport position      =
       =============================================*/

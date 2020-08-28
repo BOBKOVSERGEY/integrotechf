@@ -80,11 +80,11 @@
         background: url("../images/list.svg") no-repeat;
         transition: all .3s;
       }
-      &:hover {
+      /*&:hover {
         &:before {
           transform: translate(0, 5px);
         }
-      }
+      }*/
     }
   }
   &__container {
