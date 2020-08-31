@@ -5,7 +5,7 @@
   display: inline-block;
 }
 
-.page-pagination li a {
+.page-pagination li a, .page-pagination li span {
   font-weight: 500;
   padding: 0 10px;
   display: block;
@@ -20,6 +20,13 @@
 }
 
 .page-pagination li a.current {
+  background: $colorBlue;
+  color: #fff;
+  &:hover {
+    color: rgba(white, .8);
+  }
+}
+.page-pagination li span.current {
   background: $colorBlue;
   color: #fff;
   &:hover {

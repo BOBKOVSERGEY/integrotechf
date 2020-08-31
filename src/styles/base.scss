@@ -189,6 +189,25 @@ a {
   width: 100%!important;
 }
 
+blockquote {
+  margin: 54px 65px 44px 70px !important;
+  padding: 0 0 0 20px;
+
+  border-left: 4px solid #eee;
+  border-left-color: $colorBlue;
+  position: relative;
+  color: #333;
+  & p {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.78;
+    font-weight: 600;
+  }
+  @media only screen and (max-width: 767px) {
+    margin: 54px 65px 44px 30px !important;
+  }
+}
+
 
 
 
