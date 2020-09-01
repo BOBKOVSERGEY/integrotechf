@@ -1,5 +1,5 @@
 .overlay {
-  height: 330px;
+  height: 380px;
   position: relative;
   background: url(../images/overlay.jpg) no-repeat center center;
   background-size: cover;
@@ -11,13 +11,15 @@
     height: 180px;
   }
   &__content {
-    height: 330px;
+    height: 380px;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    position: relative;
+    z-index:4;
     @media only screen and (max-width : 768px) {
       height: 250px;
     }
@@ -28,11 +30,14 @@
       font-size: 2.4rem;
       font-family: $fontBold;
       color: $colorBlue;
-      @media only screen and (max-width : 768px) {
+      @media only screen and (max-width : 992px) {
         font-size: 2rem;
       }
-      @media only screen and (max-width : 480px) {
+      @media only screen and (max-width : 768px) {
         font-size: 1.5rem;
+      }
+      @media only screen and (max-width : 480px) {
+        font-size: 1.2rem;
       }
     }
   }
