@@ -1,17 +1,17 @@
 .overlay {
-  height: 380px;
+  min-height: 330px;
   position: relative;
   background: url(../images/overlay.jpg) no-repeat center center;
   background-size: cover;
   z-index: 1;
   @media only screen and (max-width : 768px) {
-    height: 250px;
+    min-height: 250px;
   }
   @media only screen and (max-width : 480px) {
-    height: 180px;
+    min-height: 180px;
   }
   &__content {
-    height: 380px;
+    min-height: 330px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -20,11 +20,12 @@
     text-align: center;
     position: relative;
     z-index:4;
+    padding: 70px 0;
     @media only screen and (max-width : 768px) {
-      height: 250px;
+      min-height: 250px;
     }
     @media only screen and (max-width : 480px) {
-      height: 180px;
+      min-height: 180px;
     }
     & h1 {
       font-size: 2.4rem;
@@ -43,7 +44,7 @@
   }
   &__breadcrumb-wrapper {
     @media only screen and (max-width : 768px) {
-      display: none;
+      //display: none;
     }
   }
   &__breadcrumb {
