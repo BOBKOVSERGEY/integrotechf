@@ -39,6 +39,9 @@
     }
     &__logo {
       text-align: right;
+      & img {
+        max-width: 170px;
+      }
     }
     &__overlay {
       position: relative;

@@ -377,23 +377,22 @@
                       </div>
                     </form>
                   </div>
-                  <!-- language-menu -->
-                  <div class="selectWrapper d-none d-xl-block">
-                    <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
-                      <option value="ru" disabled="" selected="">RU</option>
-                      <option value="en">EN</option>
-    
-                    </select>
-    
-                    <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
-                    <div class="selectCustom js-selectCustom" aria-hidden="true">
-                      <div class="selectCustom-trigger"><img width="24px" src="dist/images/russia.svg">RU</div>
-                      <div class="selectCustom-options">
-                        <div class="selectCustom-option" data-value="ru"><img width="24px" src="dist/images/russia.svg">RU</div>
-                        <div class="selectCustom-option" data-value="en"><img width="24px" src="dist/images/en.svg">EN</div>
-                      </div>
-                    </div>
+                  <div class="language-menu" >
+                    <ul>
+                      <li>
+                          <img class="ls-flag" src="dist/images/russia.svg" alt="ru" title="Русский">
+                          <span class="wpml-ls-native">RU</span>
+                        <ul class="ls-sub-menu">
+                          <li class="">
+                            <a href="#" class="">
+                              <img class="ls-flag" src="dist/images/en.svg" alt="en" title="English"><span class="wpml-ls-native">English</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
                   </div>
+    
                   <button class="btn__header d-none d-xl-block" data-toggle="modal" data-target="#request">Связаться с нами</button>
                   <!-- mobile menu -->
                   <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">
@@ -436,7 +435,7 @@
           </div>
           <div class="col-md-12  col-lg-5">
             <div class="banner__about">
-              <p><span>INTEGRO Technologies</span> — системный интегратор, предоставляющий услуги в области разработки, комплексного внедрения и поддержки специализированных ИТ-решений.</p>
+              <p>Integro Technologies (АО «Интегро Текнолоджиз») — крупнейший системный интегратор в отрасли гражданской авиации.</p>
             </div>
           </div>
         </div>
@@ -454,81 +453,89 @@
             <div class="solution-map__tooltip-icon solution-map__tooltip-icon_1">
               <i class="fas fa-plus"></i>
               <div class="solution-map__tooltip-text solution-map__tooltip-text_bg-light-blue">
-                <h3 class="solution-map__cluster-link"><a href="#">Решения для аэропортов</a></h3>
-                <h3 class="solution-map__root-link"><a href="#">Повышение лояльности пассажиров</a></h3>
-                <ul class="solution-map__list">
-                  <li><a href="#">Мобильное приложение</a></li>
-                  <li><a href="#">Чат-бот</a></li>
-                </ul>
-                <h3 class="solution-map__root-link"><a href="#">Управление продажами и маркетинговыми кампаниями</a></h3>
-                <ul class="solution-map__list">
-                  <li><a href="#">Платформа по работе с обращениями клиентов</a></li>
-                  <li><a href="#">Динамическая сегментация клиентов</a></li>
-                  <li><a href="#">Расширение каналов дистрибуции и продаж</a></li>
-                </ul>
-                <h3 class="solution-map__root-link"><a href="#">Управление персоналом</a></h3>
-                <ul class="solution-map__list">
-                  <li><a href="#">Планирование сезонного расписания и оперативное управление</a></li>
-                  <li><a href="#">Управлением сменами</a></li>
-                  <li><a href="#">Управлением экипажем</a></li>
-                  <li><a href="#">Повышение пунктуальности пилотов</a></li>
-                </ul>
+                <div class="solution-map__tooltip-text-overflow">
+                  <h3 class="solution-map__cluster-link"><a href="#">Решения для аэропортов</a></h3>
+                  <h3 class="solution-map__root-link"><a href="#">Повышение лояльности пассажиров</a></h3>
+                  <ul class="solution-map__list">
+                    <li><a href="#">Мобильное приложение</a></li>
+                    <li><a href="#">Чат-бот</a></li>
+                  </ul>
+                  <h3 class="solution-map__root-link"><a href="#">Управление продажами и маркетинговыми кампаниями</a></h3>
+                  <ul class="solution-map__list">
+                    <li><a href="#">Платформа по работе с обращениями клиентов</a></li>
+                    <li><a href="#">Динамическая сегментация клиентов</a></li>
+                    <li><a href="#">Расширение каналов дистрибуции и продаж</a></li>
+                  </ul>
+                  <h3 class="solution-map__root-link"><a href="#">Управление персоналом</a></h3>
+                  <ul class="solution-map__list">
+                    <li><a href="#">Планирование сезонного расписания и оперативное управление</a></li>
+                    <li><a href="#">Управлением сменами</a></li>
+                    <li><a href="#">Управлением экипажем</a></li>
+                    <li><a href="#">Повышение пунктуальности пилотов</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="solution-map__tooltip-icon solution-map__tooltip-icon_2">
               <i class="fas fa-plus"></i>
               <div class="solution-map__tooltip-text_wide">
-                <h3 class="solution-map__cluster-link"><a href="#">Back Office и ИТ</a></h3>
-               <div class="row">
-                 <div class="col-lg-6"><h3 class="solution-map__root-link"><a href="#">Автоматизация налоговой деятельности</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Система налогового мониторинга</a></li>
-                   </ul>
-                   <h3 class="solution-map__root-link"><a href="#">Управление взаимоотношениями с клиентами</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Управление взаимоотношениями с клиентами (CRM)</a></li>
-                   </ul>
-                   <h3 class="solution-map__root-link"><a href="#">Интеграционные решения</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Интеграция с учетными и финансовыми системами, системами документооборота, ТОиР, IATA, внешними системами</a></li>
-                   </ul></div>
-                 <div class="col-lg-6"> <h3 class="solution-map__root-link"><a href="#">Управление финансовым планированием и бюджетированием Управление предприятием</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Внедрение ERP</a></li>
-                   </ul>
-                   <h3 class="solution-map__root-link"><a href="#">Управление операционной эффективностью</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Повышение эффективности бизнес-процессов с помощью Process Mining</a></li>
-                   </ul>
-                   <h3 class="solution-map__root-link"><a href="#">Техническая поддержка и сопровождение</a></h3>
-                   <ul class="solution-map__list">
-                     <li><a href="#">Техническая поддержка 1,2 линии</a></li>
-                   </ul></div>
-               </div>
+                <div class="solution-map__tooltip-text-overflow">
+                  <h3 class="solution-map__cluster-link"><a href="#">Back Office и ИТ</a></h3>
+                  <div class="row">
+                    <div class="col-lg-6"><h3 class="solution-map__root-link"><a href="#">Автоматизация налоговой деятельности</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Система налогового мониторинга</a></li>
+                      </ul>
+                      <h3 class="solution-map__root-link"><a href="#">Управление взаимоотношениями с клиентами</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Управление взаимоотношениями с клиентами (CRM)</a></li>
+                      </ul>
+                      <h3 class="solution-map__root-link"><a href="#">Интеграционные решения</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Интеграция с учетными и финансовыми системами, системами документооборота, ТОиР, IATA, внешними системами</a></li>
+                      </ul></div>
+                    <div class="col-lg-6"> <h3 class="solution-map__root-link"><a href="#">Управление финансовым планированием и бюджетированием Управление предприятием</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Внедрение ERP</a></li>
+                      </ul>
+                      <h3 class="solution-map__root-link"><a href="#">Управление операционной эффективностью</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Повышение эффективности бизнес-процессов с помощью Process Mining</a></li>
+                      </ul>
+                      <h3 class="solution-map__root-link"><a href="#">Техническая поддержка и сопровождение</a></h3>
+                      <ul class="solution-map__list">
+                        <li><a href="#">Техническая поддержка 1,2 линии</a></li>
+                      </ul></div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="solution-map__tooltip-icon solution-map__tooltip-icon_3">
               <i class="fas fa-plus"></i>
               <div class="solution-map__tooltip-text solution-map__tooltip-text_bg-light-brown">
-                <h3 class="solution-map__cluster-link"><a href="#">Решения для авиакомпаний</a></h3>
-                <h3 class="solution-map__root-link"><a href="#">Управление перонными службами</a></h3>
-                <ul class="solution-map__list">
-                  <li><a href="#">Управление перронной техникой и водителями</a></li>
-                </ul>
-                <h3 class="solution-map__root-link"><a href="#">Управление багажом и перевозками</a></h3>
-                <ul class="solution-map__list">
-                  <li><a href="#">Личный кабинет грузового агента</a></li>
-                  <li><a href="#">Обработка багажа</a></li>
-                  <li><a href="#">Автоматизация грузовых перевозок</a></li>
-                </ul>
+                <div class="solution-map__tooltip-text-overflow">
+                  <h3 class="solution-map__cluster-link"><a href="#">Решения для авиакомпаний</a></h3>
+                  <h3 class="solution-map__root-link"><a href="#">Управление перонными службами</a></h3>
+                  <ul class="solution-map__list">
+                    <li><a href="#">Управление перронной техникой и водителями</a></li>
+                  </ul>
+                  <h3 class="solution-map__root-link"><a href="#">Управление багажом и перевозками</a></h3>
+                  <ul class="solution-map__list">
+                    <li><a href="#">Личный кабинет грузового агента</a></li>
+                    <li><a href="#">Обработка багажа</a></li>
+                    <li><a href="#">Автоматизация грузовых перевозок</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="solution-map__tooltip-icon solution-map__tooltip-icon_4">
               <i class="fas fa-plus"></i>
               <div class="solution-map__tooltip-text solution-map__tooltip-text_bg-orange">
-                <h3 class="solution-map__cluster-link"><a href="#">Решения для воздушных судов</a></h3>
-                <h3 class="solution-map__root-link"><a href="#">ТОиР</a></h3>
-                <h3 class="solution-map__root-link"><a href="#">Линейное обслуживание</a></h3>
+                <div class="solution-map__tooltip-text-overflow">
+                  <h3 class="solution-map__cluster-link"><a href="#">Решения для воздушных судов</a></h3>
+                  <h3 class="solution-map__root-link"><a href="#">ТОиР</a></h3>
+                  <h3 class="solution-map__root-link"><a href="#">Линейное обслуживание</a></h3>
+                </div>
               </div>
             </div>
             <img src="dist/images/solutions-bg.png" alt="">
@@ -657,51 +664,33 @@
          <h2 class="heading__main">Проекты</h2>
          <div class="row">
            <div class="col-lg-4 col-md-6">
-             <div class="projects-new-wrap">
-               <div class="projects-new__bg-top">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
-               </div>
-               <div class="projects-new-item">
-                 <h2 class="projects-new-item__heading">
-                   <a href="project.html">Платформа по работе с обращениями Клиентов</a>
+             <div class="projects-item-wrap">
+               <div class="projects-item">
+                 <h2 class="projects-item__heading">
+                   <a href="#">Платформа по работе с обращениями Клиентов</a>
                  </h2>
-                 <span class="projects-new-item__success">История успеха</span>
-               </div>
-               <div class="projects-new__bg-bottom">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
+                 <span class="projects-item__success">История успеха</span>
                </div>
              </div>
            </div>
            <div class="col-lg-4 col-md-6">
-             <div class="projects-new-wrap projects-new-wrap_2">
-               <div class="projects-new__bg-top">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
-               </div>
-               <div class="projects-new-item">
-                 <h2 class="projects-new-item__heading">
-                   <a href="project.html">Разработка и внедрение системы публикации и
+             <div class="projects-item-wrap">
+               <div class="projects-item projects-item_2">
+                 <h2 class="projects-item__heading">
+                   <a href="#">Разработка и внедрение системы публикации и
                      управления внешними сервисами ПАО «Аэрофлот» на базе решения IBM API Connect</a>
                  </h2>
-                 <span class="projects-new-item__success">История успеха</span>
-               </div>
-               <div class="projects-new__bg-bottom">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
+                 <span class="projects-item__success">История успеха</span>
                </div>
              </div>
            </div>
            <div class="col-lg-4 col-md-6">
-             <div class="projects-new-wrap projects-new-wrap_3">
-               <div class="projects-new__bg-top">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
-               </div>
-               <div class="projects-new-item">
-                 <h2 class="projects-new-item__heading">
-                   <a href="project.html">Внедрение производственной аналитической платформы Sabre Intelligence Exchange (Sabre IX)</a>
+             <div class="projects-item-wrap">
+               <div class="projects-item projects-item_3">
+                 <h2 class="projects-item__heading">
+                   <a href="#">Внедрение производственной аналитической платформы Sabre Intelligence Exchange (Sabre IX)</a>
                  </h2>
-                 <span class="projects-new-item__success">История успеха</span>
-               </div>
-               <div class="projects-new__bg-bottom">
-                 <svg viewBox="0 0 368.78 38.05"><polygon points="0 38.05 368.78 38.05 368.78 0 157.68 0 0 38.05"/></svg>
+                 <span class="projects-item__success">История успеха</span>
                </div>
              </div>
            </div>
@@ -757,7 +746,7 @@
           <div class="row justify-content-center">
             <div class="col-md-10">
               <div class="contact-form__wrapper">
-                <form class="form"  method="post" enctype="multipart/form-data">
+                <form class="form" method="post" enctype="multipart/form-data">
                   <div class="row">
                     <div class="col-lg-4">
                       <div class="form-group">
@@ -799,14 +788,246 @@
                     </div>
                   </div>
                 </form>
-                <!--<div class="contact-form__overlay">
-                  <div class="contact-form__overlay-text">Заявка отправляется...</div>
-                  <div class="spinner d-flex justify-content-center align-items-center h-100">
-                    <div class="bounce1"></div>
-                    <div class="bounce2"></div>
-                    <div class="bounce3"></div>
+                <div class="contact-form__overlay">
+                  <div class="assembly">
+                    <div class="comp-3d comp-3d--i">
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                      <div class="cube">
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                        <div class="cube__face"></div>
+                      </div>
+                    </div>
+                    <div class="comp-3d comp-3d--o">
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                      <div class="pos">
+                        <div class="cube">
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                          <div class="cube__face"></div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>-->
+                </div>
               </div>
             </div>
           </div>
@@ -1129,14 +1350,246 @@
             </form>
           </div>
     
-          <!--<div class="modal-my__overlay">
-            <div class="modal-my__overlay-text">Заявка отправляется...</div>
-            <div class="spinner d-flex justify-content-center align-items-center h-100">
-              <div class="bounce1"></div>
-              <div class="bounce2"></div>
-              <div class="bounce3"></div>
+          <div class="modal-my__overlay">
+            <div class="assembly">
+              <div class="comp-3d comp-3d--i">
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+                <div class="cube">
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                  <div class="cube__face"></div>
+                </div>
+              </div>
+              <div class="comp-3d comp-3d--o">
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+                <div class="pos">
+                  <div class="cube">
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                    <div class="cube__face"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>-->
+          </div>
     
           <!-- <div class="modal-footer">
              <button type="button" class="btn btn-lg btn-block btn-primary d-flex align-items-center">

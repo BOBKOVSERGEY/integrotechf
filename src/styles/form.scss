@@ -149,3 +149,25 @@
     transition: all 1s;
   }
 }
+.contact-form {
+  &__wrapper {
+  position: relative;
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(white,.5);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all .7s cubic-bezier(.645,.045,.355,1);
+    -o-transition: all .7s cubic-bezier(.645,.045,.355,1);
+    transition: all .7s cubic-bezier(.645,.045,.355,1);
+    & div {
+      position: absolute;
+      transform-style: preserve-3d;
+    }
+  }
+}

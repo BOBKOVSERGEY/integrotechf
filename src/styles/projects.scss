@@ -34,21 +34,25 @@
     background-repeat: no-repeat;
     background-position: 0 0;
  */
-    -ms-clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
-    -webkit-clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
-    clip-path: polygon(50% 0, 100% 1%, 100% 80%, 50% 100%, 0 100%, 0 20%);
+    -ms-clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0 20%);
+    -webkit-clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0 20%);
+    clip-path: polygon(40% 0, 100% 0, 100% 80%, 60% 100%, 0 100%, 0 20%);
 
 
     margin-bottom: 50px;
     transition: all .7s cubic-bezier(.645,.045,.355,1);
     &-wrap {
       filter: drop-shadow(8px 10px 20px rgba(0, 0, 0, 0.2));
+      transition: all .7s cubic-bezier(.645,.045,.355,1);
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
     &_2 {
       background: #efefef;
     }
     &_3 {
-      background: rgba(#306fc1, .9);
+      background: #5785c1;
       & .projects-item__heading {
         & a {
           color: #fff;

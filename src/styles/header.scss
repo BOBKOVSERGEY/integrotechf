@@ -2181,30 +2181,57 @@
     - language
 =======================*/
 .language-menu {
-  padding-right: 25px;
+  padding-right: 10px;
+  width: 80px;
+  margin-right: 5px;
 }
 
 .language-menu > ul > li {
+  font-family: $fontMedium;
   position: relative;
-  display: inline-block;
-  line-height: 1;
-  padding: 0 10px;
-}
+  display: flex;
+  align-self: center;
+  padding: 0 10px 0 0;
+  cursor: pointer;
 
+  &:before {
+    content: '\f078';
+    font-size: 13px;
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    font-weight: 900;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+    font-family: "Font Awesome 5 Free";
+  }
+}
+.language-menu > ul > li > img {
+  margin-right: 5px;
+  width: 24px;
+}
 .language-menu > ul > li > a {
   padding: 0 10px;
-  font-weight: 500;
-  color: #333;
   text-transform: uppercase;
 }
 
 .language-menu > ul > li > a span {
   margin-left: 10px;
 }
+.language-menu > ul > li > span {
+  margin-right: 10px;
+}
 
 .language-menu > ul > li > a::after {
   content: '\f078';
-  font-size: 8px;
+  font-size: 12px;
   border: 0;
   position: absolute;
   top: 50%;
@@ -2218,8 +2245,7 @@
   font-variant: normal;
   text-rendering: auto;
   line-height: 1;
-  font-family: 'Font Awesome 5 Pro';
-  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
 }
 
 .language-menu > ul > li ul {
@@ -2242,6 +2268,10 @@
   -webkit-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  @media only screen and (max-width : 1200px) {
+    right: 0;
+    left: auto;
+  }
 }
 
 .language-menu > ul > li ul li a {

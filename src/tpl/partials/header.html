@@ -117,23 +117,22 @@
                   </div>
                 </form>
               </div>
-              <!-- language-menu -->
-              <div class="selectWrapper d-none d-xl-block">
-                <select class="selectNative js-selectNative" aria-labelledby="jobLabel">
-                  <option value="ru" disabled="" selected="">RU</option>
-                  <option value="en">EN</option>
-
-                </select>
-
-                <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
-                <div class="selectCustom js-selectCustom" aria-hidden="true">
-                  <div class="selectCustom-trigger"><img width="24px" src="dist/images/russia.svg">RU</div>
-                  <div class="selectCustom-options">
-                    <div class="selectCustom-option" data-value="ru"><img width="24px" src="dist/images/russia.svg">RU</div>
-                    <div class="selectCustom-option" data-value="en"><img width="24px" src="dist/images/en.svg">EN</div>
-                  </div>
-                </div>
+              <div class="language-menu" >
+                <ul>
+                  <li>
+                      <img class="ls-flag" src="dist/images/russia.svg" alt="ru" title="Русский">
+                      <span class="wpml-ls-native">RU</span>
+                    <ul class="ls-sub-menu">
+                      <li class="">
+                        <a href="#" class="">
+                          <img class="ls-flag" src="dist/images/en.svg" alt="en" title="English"><span class="wpml-ls-native">English</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
               </div>
+
               <button class="btn__header d-none d-xl-block" data-toggle="modal" data-target="#request">Связаться с нами</button>
               <!-- mobile menu -->
               <div class="mobile-navigation-icon d-block d-xl-none" id="mobile-menu-trigger">

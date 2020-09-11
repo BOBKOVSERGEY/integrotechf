@@ -96,7 +96,7 @@ function css() {
       cascade: false
     }))
     .pipe(csso())
-    .pipe(sourcemaps.write())
+    //.pipe(sourcemaps.write())
     .pipe(dest(path.sass.dist));
 }
 

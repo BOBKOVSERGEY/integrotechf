@@ -600,9 +600,9 @@
       
       xhr.open("POST", "/send-main.php", true);
       
-      var contactLoaderText = document.querySelector('.contact-form__overlay-text');
-      contactLoaderText.textContent = 'Заявка отправляется...';
-      var contactLoader = document.querySelector('.contact-form__overlay');
+      //var contactLoaderText = document.querySelector('.contact-form__overlay-text');
+      //contactLoaderText.textContent = 'Заявка отправляется...';
+      let contactLoader = document.querySelector('.contact-form__overlay');
       contactLoader.style.visibility = 'visible';
       contactLoader.style.opacity = '1';
       
@@ -614,7 +614,7 @@
       // ready state 4
       xhr.onload = function () {
         if (this.status === 200) {
-          contactLoaderText.textContent = 'Заявка успешно отправлена!';
+          //contactLoaderText.textContent = 'Заявка успешно отправлена!';
           setTimeout(function () {
             contactLoader.style.visibility = 'hidden';
             contactLoader.style.opacity = '0';
@@ -669,9 +669,7 @@
       
       xhr.open("POST", "/send-main.php", true);
       
-      var contactLoaderText = document.querySelector('.modal-my__overlay-text');
-      contactLoaderText.textContent = 'Заявка отправляется...';
-      var contactLoader = document.querySelector('.modal-my__overlay');
+      let contactLoader = document.querySelector('.modal-my__overlay');
       contactLoader.style.visibility = 'visible';
       contactLoader.style.opacity = '1';
       
@@ -684,7 +682,7 @@
       // ready state 4
       xhr.onload = function () {
         if (this.status === 200) {
-          contactLoaderText.textContent = 'Заявка успешно отправлена!';
+          
           setTimeout(function () {
             contactLoader.style.visibility = 'hidden';
             contactLoader.style.opacity = '0';
@@ -745,7 +743,7 @@
 - Sync both selects values when selecting a option. (native or custom)
 
 */
-  
+  /*
   const elSelectNative = document.getElementsByClassName("js-selectNative")[0];
   const elSelectCustom = document.getElementsByClassName("js-selectCustom")[0];
   const elSelectCustomBox = elSelectCustom.children[0];
@@ -900,7 +898,7 @@
     
     // TODO: Toggle these event listeners based on selectCustom visibility
   });
-  
+  */
   
 })(jQuery);
 
