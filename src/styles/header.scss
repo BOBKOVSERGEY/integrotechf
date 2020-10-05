@@ -2182,14 +2182,15 @@
 =======================*/
 .language-menu {
   padding-right: 10px;
-  width: 80px;
+  width: 90px;
   margin-right: 5px;
+  height: 24px;
 }
 
 .language-menu > ul > li {
   font-family: $fontMedium;
   position: relative;
-  display: flex;
+  display: inline-block;
   align-self: center;
   padding: 0 10px 0 0;
   cursor: pointer;
@@ -2216,6 +2217,7 @@
 .language-menu > ul > li > img {
   margin-right: 5px;
   width: 24px;
+  vertical-align: top;
 }
 .language-menu > ul > li > a {
   padding: 0 10px;
