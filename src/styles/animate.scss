@@ -3305,6 +3305,33 @@
 .slideInLeft {
   -webkit-animation-name: slideInLeft;
   animation-name: slideInLeft;
+
+}
+
+@-webkit-keyframes slowInWidth {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slowInWidth {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+
+.slowInWidth {
+  -webkit-animation-name: slowInWidth;
+  animation-name: slowInWidth;
 }
 
 @-webkit-keyframes slideInRight {

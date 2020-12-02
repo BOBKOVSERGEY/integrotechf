@@ -527,6 +527,34 @@
   /*en swiper*/
   
   /**
+   * swiper
+   */
+  let swiperAnimation = new SwiperAnimation();
+  let listNewsSlider = new Swiper('.news-list-slider__container', {
+    //slidesPerView : 1,
+    //loop: true,
+    speed: 1000,
+    spaceBetween : 10,
+    autoplay: {
+      delay: 5000,
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+    on: {
+      init: function () {
+        swiperAnimation.init(this).animate();
+      },
+      slideChange: function () {
+        swiperAnimation.init(this).animate();
+      }
+    },
+  });
+  
+  /*en swiper*/
+  
+  /**
    * form
    */
   
